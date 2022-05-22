@@ -17,10 +17,10 @@ import LoadingScreen from '../lib/LoadingScreen.svelte';
         <source src="/video.mp4" autoplay loop type="video/mp4">
         Your browser does not support the video tag
     </video>
-    <TypedJs strings={['Saving Ocean Animals', 'Drinking Ocean Water', "Attacking Ocean Wildlife", 
+    <h1>Our mission is: <TypedJs strings={['Saving Ocean Animals', 'Drinking Ocean Water', "Attacking Ocean Wildlife", 
 'Killing Turtles']} loop>
-        <h1>Our mission is: <span class='typing'></span></h1>
-    </TypedJs>
+        <span class='typing'></span>
+    </TypedJs></h1>
 </header>
 <section class="information">
     <div class="airgun"><h2>Airgun</h2><h3>225 dB</h3><p>An airgun in the water is comparable to a human standing next to a rocket engine when it's launching.</p></div>
@@ -31,8 +31,9 @@ import LoadingScreen from '../lib/LoadingScreen.svelte';
 <style>
     nav {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
+        gap: 24px;
         padding: 24px 24px;
         background-color: rgb(29, 29, 29);
     }
@@ -55,19 +56,17 @@ import LoadingScreen from '../lib/LoadingScreen.svelte';
     header {
         position: relative;
         display: flex;
-        /* justify-content: center; */
-        align-items: center;
-        
+        /* justify-content: center; */        
     }
 
     video {
-        width: 100%;
-        height: 100%;
-        aspect-ratio: 16 / 9;
+        max-height: 80vh;
     }
 
     h1 {
         position: absolute;   
+        top: 50%;
+        margin-top: -50%;
         left: 24px;
         font-size: 48px;
         color: white;
@@ -80,12 +79,6 @@ import LoadingScreen from '../lib/LoadingScreen.svelte';
 
     .information {
         width: 100%;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: 'airgun propeller' 'animal animal';
-        justify-items: center;
     }
 
     .information > div {
@@ -128,5 +121,25 @@ import LoadingScreen from '../lib/LoadingScreen.svelte';
     .animal {
         grid-area: animal;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.discordapp.net/attachments/973416247935004682/977994134776344576/IMG_8431.jpg');   
+    }
+
+    @media (min-width: 640px) {
+        nav {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 16 / 9;
+        }
+        .information {
+            display: grid;
+            justify-items: center;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: 'airgun propeller' 'animal animal';
+        }
     }
 </style>
