@@ -23,6 +23,7 @@
 </script>
 
 <section>
+    <h2>The turtle shakes as the sound input increases.</h2>
     <img class="turtle" bind:this={image} src="/happy turtle.png" alt="">
 </section>
 
@@ -35,6 +36,10 @@
         overflow: hidden;
         display: flex;
         justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 36px;
+        text-align: center;
     }
 
     .turtle {
