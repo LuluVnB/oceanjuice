@@ -87,12 +87,12 @@ import LoadingScreen from '../lib/LoadingScreen.svelte';
     .propeller {
         grid-area: propeller;
         background-color: green;
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.discordapp.net/attachments/973416247935004682/977994134776344576/IMG_8431.jpg');   
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.discordapp.net/attachments/973416247935004682/978013798193578014/unknown.png');   
     }
 
     .animal {
         grid-area: animal;
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.discordapp.net/attachments/973416247935004682/977994134776344576/IMG_8431.jpg');   
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.discordapp.net/attachments/973416247935004682/978013532350201867/unknown.png?width=721&height=405');   
     }
 
     @media (min-width: 640px) {
