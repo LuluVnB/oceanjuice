@@ -53,3 +53,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.rotate {
+	animation: rotation 0.01s infinite alternate;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(-15deg);
+	}
+	to {
+		transform: rotate(15deg);
+	}
+}

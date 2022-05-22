@@ -2,7 +2,7 @@
     <img src="/tritonhacks-logo.webp" alt="">
     <div>
         <a href="/">Information</a>
-        <a href="/">Visualizations</a>
+        <a href="/visualizations">Visualizations</a>
     </div>
 </nav>
 <slot />
