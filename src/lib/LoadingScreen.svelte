@@ -30,6 +30,7 @@ import { onMount } from 'svelte';
         color: white;
         text-align: center;
         font-size: 30px;
+        top: 0;
     }
 
     p {
