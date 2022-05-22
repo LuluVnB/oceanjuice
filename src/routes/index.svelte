@@ -1,7 +1,7 @@
 <script>
     // @ts-ignore
     import TypedJs from '@loscrackitos/svelte-typed-js';
-import LoadingScreen from '../lib/LoadingScreen.svelte';
+    import LoadingScreen from '../lib/LoadingScreen.svelte';
 </script>
 
 <!-- <LoadingScreen /> -->
@@ -11,8 +11,7 @@ import LoadingScreen from '../lib/LoadingScreen.svelte';
         <source src="/video.mp4" autoplay loop type="video/mp4">
         Your browser does not support the video tag
     </video>
-    <h1>Our mission is: <TypedJs strings={['Saving Ocean Animals', 'Drinking Ocean Water', "Attacking Ocean Wildlife", 
-'Killing Turtles']} loop>
+    <h1>Our mission is: <TypedJs strings={['Saving Ocean Animals', 'Reducing Noise Pollution', 'Spreading Awareness']} loop>
         <span class='typing'></span>
     </TypedJs></h1>
 </header>

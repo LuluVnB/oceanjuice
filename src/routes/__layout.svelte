@@ -1,5 +1,5 @@
 <nav>
-    <img src="/tritonhacks-logo.webp" alt="">
+    <a href="https://tritonhacks.org"><img src="/tritonhacks-logo.webp" alt=""></a>
     <div>
         <a href="/">Information</a>
         <a href="/visualizations">Visualizations</a>
