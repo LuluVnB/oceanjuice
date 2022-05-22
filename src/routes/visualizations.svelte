@@ -2,7 +2,7 @@
     import { io } from "socket.io-client";
     import { onMount } from "svelte";
     
-    const socket = io('https://4006-69-196-32-69.ngrok.io/')
+    const socket = io('http://localhost:5000/')
 
     let dB = 0;
     let image: HTMLImageElement;
