@@ -76,6 +76,7 @@
 
     .information p {
         margin-top: 8px;
+        line-height: 2;
     }
 
     .airgun {
