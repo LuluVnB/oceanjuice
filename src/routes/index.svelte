@@ -7,7 +7,7 @@
 <LoadingScreen />
 
 <header>
-    <video autoplay loop muted>
+    <video autoplay loop muted playsinline>
         <source src="/video.mp4" autoplay loop type="video/mp4">
         Your browser does not support the video tag
     </video>
