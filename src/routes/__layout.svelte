@@ -1,3 +1,7 @@
+<script>
+import LoadingScreen from "../lib/LoadingScreen.svelte";
+
+</script>
 <nav>
     <a href="https://tritonhacks.org"><img src="/tritonhacks-logo.webp" alt=""></a>
     <div>
@@ -6,6 +10,7 @@
     </div>
 </nav>
 <slot />
+<LoadingScreen />
 
 <style>
     nav {

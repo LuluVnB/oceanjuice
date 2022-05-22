@@ -1,10 +1,8 @@
 <script>
     // @ts-ignore
     import TypedJs from '@loscrackitos/svelte-typed-js';
-    import LoadingScreen from '../lib/LoadingScreen.svelte';
 </script>
 
-<LoadingScreen />
 
 <header>
     <video autoplay loop muted>
