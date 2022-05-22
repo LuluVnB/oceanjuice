@@ -12,8 +12,10 @@
             socket.on("dB", (arg) => {
                 if (arg > 48) {
                     image.classList.add('rotate')
+                    image.src = '/turtle.png'
                 } else {
                     image.classList.remove('rotate')
+                    image.src = '/happy turtle.png'
                 }
             });
         }
@@ -21,7 +23,7 @@
 </script>
 
 <section>
-    <img class="turtle" bind:this={image} src="/turtle.png" alt="">
+    <img class="turtle" bind:this={image} src="/happy turtle.png" alt="">
 </section>
 
 <style>
