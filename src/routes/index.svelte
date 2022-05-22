@@ -1,8 +1,10 @@
 <script>
     // @ts-ignore
     import TypedJs from '@loscrackitos/svelte-typed-js';
+import LoadingScreen from '../lib/LoadingScreen.svelte';
 </script>
 
+<LoadingScreen />
 <nav>
     <img src="/tritonhacks-logo.webp" alt="">
     <div>
