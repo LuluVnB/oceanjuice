@@ -13,7 +13,7 @@ import { onMount } from 'svelte';
 
 {#if visible}
     <div in:fade={{duration: 3000, delay: 1000}} out:fade={{delay: 5000, duration: 1000}}>
-        <p>Imagine going through every second of your day hearing noises as loud as a rocket engine next to your ear. This is what ocean creatures go through.</p>
+        <p>Imagine going through every second of your day hearing noises as loud as a rocket engine next to your ear. This is what ocean creatures have been going through for the past six decades.</p>
     </div>
 {/if}
 
