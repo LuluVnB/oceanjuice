@@ -23,7 +23,7 @@
 </script>
 
 <section>
-    <h2>The turtle shakes as the sound input increases.</h2>
+    <h2>The turtle shakes if the sound input is at a harmful level.</h2>
     <img class="turtle" bind:this={image} src="/happy turtle.png" alt="">
 </section>
 
