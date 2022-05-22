@@ -4,7 +4,7 @@
     import LoadingScreen from '../lib/LoadingScreen.svelte';
 </script>
 
-<!-- <LoadingScreen /> -->
+<LoadingScreen />
 
 <header>
     <video autoplay loop muted>
