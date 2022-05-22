@@ -7,7 +7,7 @@ import LoadingScreen from '../lib/LoadingScreen.svelte';
 <!-- <LoadingScreen /> -->
 
 <header>
-    <video autoplay loop>
+    <video autoplay loop muted>
         <source src="/video.mp4" autoplay loop type="video/mp4">
         Your browser does not support the video tag
     </video>
@@ -32,6 +32,7 @@ import LoadingScreen from '../lib/LoadingScreen.svelte';
 
     video {
         max-height: 80vh;
+        object-fit: cover;
     }
 
     h1 {
