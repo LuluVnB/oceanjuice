@@ -5,13 +5,7 @@ import LoadingScreen from '../lib/LoadingScreen.svelte';
 </script>
 
 <!-- <LoadingScreen /> -->
-<nav>
-    <img src="/tritonhacks-logo.webp" alt="">
-    <div>
-        <a href="/">Information</a>
-        <a href="/">Visualizations</a>
-    </div>
-</nav>
+
 <header>
     <video autoplay loop>
         <source src="/video.mp4" autoplay loop type="video/mp4">
@@ -29,34 +23,11 @@ import LoadingScreen from '../lib/LoadingScreen.svelte';
 </section>
 
 <style>
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-        padding: 24px 24px;
-        background-color: rgb(29, 29, 29);
-    }
-    
-    nav img {
-        width: 48px;
-    }
-
-    nav > div {
-        display: flex;
-        justify-content: center;
-        gap: 16px;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: white;
-    }
-
     header {
         position: relative;
         display: flex;
-        /* justify-content: center; */        
+        /* justify-content: center; */
+        align-items: center;        
     }
 
     video {
@@ -65,8 +36,8 @@ import LoadingScreen from '../lib/LoadingScreen.svelte';
 
     h1 {
         position: absolute;   
-        top: 50%;
-        margin-top: -50%;
+        /* top: 50%;
+        margin-top: -50%; */
         left: 24px;
         font-size: 48px;
         color: white;
@@ -124,11 +95,6 @@ import LoadingScreen from '../lib/LoadingScreen.svelte';
     }
 
     @media (min-width: 640px) {
-        nav {
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-        }
         video {
             width: 100%;
             height: 100%;
