@@ -25,7 +25,7 @@
     header {
         position: relative;
         display: flex;
-        /* justify-content: center; */
+        justify-content: center;
         align-items: center;        
     }
 
@@ -38,9 +38,10 @@
         position: absolute;   
         /* top: 50%;
         margin-top: -50%; */
-        left: 24px;
+        /* left: 24px; */
         font-size: 48px;
         color: white;
+        text-align: center;
     }
 
     .typing {
